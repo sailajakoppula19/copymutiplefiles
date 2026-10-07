@@ -15,10 +15,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": {
-					"value": "@dataset().pFileName",
-					"type": "Expression"
-				},
+				"fileName": "@item().name",
 				"folderPath": "rawdata",
 				"fileSystem": "warehouseproject"
 			},
